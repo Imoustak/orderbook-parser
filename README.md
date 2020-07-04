@@ -10,4 +10,4 @@ First you need to build the docker image for orderbook-parser app:
 Then to start the app and the setup run: 
 `docker-compose up`  
 
-Navigate to `localhost:3000` in order to access grafana and use password: `grafana`
+Navigate to `localhost:3000` in order to access grafana and use default password: `admin`
