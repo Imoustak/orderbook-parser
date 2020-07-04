@@ -1,17 +1,13 @@
-# `orderbook-parser`
+# `orderbook-parser + metrics stack`
 
-Example projects that shows how to obtain orderbook snapshots from Kraken.
+Example project that obtains orderbook snapshots from Kraken and pushes metrics related to received orderbooks in influxdb via telegraf with grafana on top.
 
-## Requirements
+## How to test
 
-- You need a relatively new version of Node.js (this was tested with version 13.3.0)
-- `yarn` package manager
+First you need to build the docker image for orderbook-parser app:
+`docker build -t imoustak/orderbook-parser:1.0.0 .`
 
-## How to install
+Then to start the app and the setup run: 
+`docker-compose up`  
 
-- `git clone` this repo
-- Run `yarn` to install the dependencies
-
-## How to run
-
-Just `yarn start`.
+Navigate to `localhost:3000` in order to access grafana and use password: `grafana`
