@@ -1,3 +1,5 @@
+const metrics = require("./metrics");
+
 // Each how many microseconds it will calculate and display the speed
 const FREQUENCY = 10000;
 
@@ -6,6 +8,8 @@ const updates = [];
 module.exports = {
   send(...params) {
     updates.push(Date.now());
+    //console.log(...params)
+    metrics.counter(...params);
     // This is where all the orderbooks updates go to be processed by an external system.
   }
 };
