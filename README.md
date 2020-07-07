@@ -6,7 +6,7 @@ Example project that obtains orderbook snapshots from Kraken and pushes metrics 
 
 ### Run the setup
 
-o start the app and the setup run:
+To start the app and the setup run:
 
 `docker-compose up`  
 
