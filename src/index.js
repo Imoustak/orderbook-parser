@@ -2,7 +2,7 @@ const WebSocket = require("ws");
 const sink = require("./sink");
 
 // See https://www.kraken.com/features/websocket-api#message-book for payload example
-const normalizePayload = payload => {
+const normalizePayload = (payload) => {
   if (payload.length === 5) {
     const [, { a: ask }, { b: bid }, , pair] = payload;
     // ask && bid
@@ -25,8 +25,8 @@ function Kraken({ symbol }) {
         pair: [symbol],
         subscription: {
           name: "book",
-          depth: 100
-        }
+          depth: 100,
+        },
       })
     );
   };
