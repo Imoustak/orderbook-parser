@@ -4,12 +4,6 @@ Example project that obtains orderbook snapshots from Kraken and pushes metrics 
 
 ## How to test
 
-### Build orderbook-parser image
-
-First you need to build the docker image for orderbook-parser app:
-
-`docker build -t imoustak/orderbook-parser:1.0.0 .`
-
 ### Run the setup
 
 Then to start the app and the setup run:

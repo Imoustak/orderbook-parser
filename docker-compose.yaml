@@ -34,7 +34,7 @@ services:
       - influxdb
 
   orderbook-parser:
-    image: imoustak/orderbook-parser:1.0.0
+    image: moustakis/orderbook-parser:1.0.0
     container_name: orderbook-parser
 
 volumes:
