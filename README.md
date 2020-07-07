@@ -6,16 +6,12 @@ Example project that obtains orderbook snapshots from Kraken and pushes metrics 
 
 ### Run the setup
 
-Then to start the app and the setup run:
+To start the app and the setup run:
 
-`docker-compose up`  
+`docker-compose up`
 
 ### Visualization with grafana
 
 Navigate to `localhost:3000` in order to access grafana and use default password: `admin`
 
-Select the `create new dashboard` and then `Add new panel`
-
-Example plot:
-
-![](images/example_orderbook_received_sum.png)
+Under home in the folder `General` there is a dashboard called `metrics` that contains 2 graph panels for the counter and gauge test cases.
