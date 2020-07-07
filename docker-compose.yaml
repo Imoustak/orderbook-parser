@@ -28,17 +28,17 @@ services:
       - "3000:3000"
     volumes:
       - "grafana-storage:/var/lib/grafana"
+      - ./dashboards:/var/lib/grafana/dashboards
       - ./grafana.ini:/etc/grafana/grafana.ini 
       - ./grafana-provisioning/:/etc/grafana/provisioning
     depends_on:
       - influxdb
 
   orderbook-parser:
-    image: moustakis/orderbook-parser:1.0.0
+    image: moustakis/orderbook-parser:1.1.0
     container_name: orderbook-parser
 
 volumes:
   grafana-storage: {}
   influxdb-storage: {}
-  chronograf-storage: {}
          
